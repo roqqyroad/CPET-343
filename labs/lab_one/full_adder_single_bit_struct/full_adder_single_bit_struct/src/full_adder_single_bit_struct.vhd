@@ -28,7 +28,7 @@ architecture structural of full_adder_single_bit_struct is
     port(
       a : in std_logic;
       b : in std_logic;
-      c : out std_logic;
+      c : out std_logic
     );
   end component;
 
@@ -37,7 +37,7 @@ architecture structural of full_adder_single_bit_struct is
     port(
       a : in std_logic;
       b : in std_logic;
-      c : out std_logic;
+      c : out std_logic
     );
   end component;
 
@@ -46,7 +46,7 @@ architecture structural of full_adder_single_bit_struct is
     port(
       a : in std_logic;
       b : in std_logic;
-      c : out std_logic;
+      c : out std_logic
     );
   end component;
 
@@ -54,18 +54,77 @@ architecture structural of full_adder_single_bit_struct is
 
   --SIGNALS--
 
-  signal temp1 : std_logic;
-  signal temp2 : std_logic;
-  signal temp3 : std_logic;
-  signal temp4 : std_logic;
-  signal temp5 : std_logic;
+  signal temp1 : std_logic; --Used with and1_instance output and or1_instance input
+  signal temp2 : std_logic; --Used with and2_instance output and or1_instance input
+  signal temp3 : std_logic; --Used with and3_instance output and or2_instance input
+  signal temp4 : std_logic; --Used with or1_instance output and or2_instance input
+  signal temp5 : std_logic; --Used with xor1_instance output and xor2_instance input
 
   --END SIGNALS--
 
 begin 
 
-  and1_inst : alu_and
+  --Top half of logic circuit design...
+  and1_instance : alu_and
     port map (
+
+      a => a,
+      b => b,
+      c => temp1
+
+    );
+
+  and2_instance : alu_and
+    port map (
+
+      a => b,
+      b => cin,
+      c => temp2
+
+    );
+
+  and3_instance : alu_and
+    port map (
+
+    a => a,
+    b => cin,
+    c => temp3
+
+    );
+
+  or1_instance : alu_or
+    port map (
+
+      a => temp1,
+      b => temp2,
+      c => temp4
+    );
+  
+  or2_instance : alu_or
+    port map (
+
+      a => temp3,
+      b => temp4,
+      c => cout
+
+    );
+
+  --Bottom half of circuit design...
+  xor1_instance : alu_xor
+    port map (
+
+      a => a,
+      b => b,
+      c => temp5
+
+    );
+  
+  xor2_instance : alu_xor
+    port map (
+
+      a => temp5,
+      b => cin,
+      c => sum
 
     );
 
