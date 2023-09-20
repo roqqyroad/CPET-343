@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 -- Dr. Kaputa
 -- single bit full adder test bench
+-- Updated By Rachel DuBois
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;      -- gives you the std_logic type
