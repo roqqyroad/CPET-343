@@ -30,7 +30,7 @@ begin
 
 uut: blink  
   generic map (
-    max_count => 50000000
+    max_count => 5000000
   )
   port map(
     clk       => clk,
