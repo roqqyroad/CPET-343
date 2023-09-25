@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 -- Dr. Kaputa
 -- blink top
+-- Edited by Rachel DuBois for Lab 3
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -30,7 +31,7 @@ begin
 
 uut: blink  
   generic map (
-    max_count => 5000000
+    max_count => 5000000 --Changed to make LED blink faster on board.
   )
   port map(
     clk       => clk,
