@@ -14,39 +14,37 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:32 on Sep 25,2023
-# vcom -reportprogress 300 -93 -work work ../../src/prop_delay.vhd 
+# Start time: 16:59:48 on Sep 25,2023
+# vcom -reportprogress 300 -93 -work work ../../src/sensitivity.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity prop_delay
-# -- Compiling architecture beh of prop_delay
-# End time: 16:37:32 on Sep 25,2023, Elapsed time: 0:00:00
+# -- Compiling entity sensitivity
+# -- Compiling architecture beh of sensitivity
+# End time: 16:59:48 on Sep 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:33 on Sep 25,2023
-# vcom -reportprogress 300 -93 -work work ../src/prop_delay_tb.vhd 
+# Start time: 16:59:48 on Sep 25,2023
+# vcom -reportprogress 300 -93 -work work ../src/sensitivity_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity prop_delay_tb
-# -- Compiling architecture beh of prop_delay_tb
-# End time: 16:37:33 on Sep 25,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" prop_delay_tb 
-# Start time: 16:37:33 on Sep 25,2023
-# ** Note: (vsim-3812) Design is being optimized...
+# -- Compiling entity sensitivity_tb
+# -- Compiling architecture beh of sensitivity_tb
+# ** Warning: ../src/sensitivity_tb.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:59:48 on Sep 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" sensitivity_tb 
+# Start time: 16:59:48 on Sep 25,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.prop_delay_tb(beh)#1
-# Loading work.prop_delay(beh)#1
+# Loading work.sensitivity_tb(beh)#1
+# Loading work.sensitivity(beh)#1
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# Causality operation skipped due to absence of debug database file
-# End time: 16:50:01 on Sep 25,2023, Elapsed time: 0:12:28
-# Errors: 5, Warnings: 1

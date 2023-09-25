@@ -1,6 +1,7 @@
   -------------------------------------------------------------------------------
 -- Dr. Kaputa
 -- sensitivity demo
+-- Edited by Rachel DuBois 
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;      
@@ -17,7 +18,7 @@ end sensitivity;
 architecture beh of sensitivity is
 
 begin
-process(s,a)
+process(s,a,b) -- Added b to sensitivity list.
   begin
     if (s = '1') then 
       c <= a;

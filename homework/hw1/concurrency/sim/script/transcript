@@ -12,41 +12,50 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:32 on Sep 25,2023
-# vcom -reportprogress 300 -93 -work work ../../src/prop_delay.vhd 
+# Start time: 16:50:31 on Sep 25,2023
+# vcom -reportprogress 300 -93 -work work ../../src/sequential.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity prop_delay
-# -- Compiling architecture beh of prop_delay
-# End time: 16:37:32 on Sep 25,2023, Elapsed time: 0:00:00
+# -- Compiling entity sequential
+# -- Compiling architecture beh of sequential
+# End time: 16:50:31 on Sep 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:33 on Sep 25,2023
-# vcom -reportprogress 300 -93 -work work ../src/prop_delay_tb.vhd 
+# Start time: 16:50:31 on Sep 25,2023
+# vcom -reportprogress 300 -93 -work work ../../src/concurrent.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity prop_delay_tb
-# -- Compiling architecture beh of prop_delay_tb
-# End time: 16:37:33 on Sep 25,2023, Elapsed time: 0:00:00
+# -- Compiling entity concurrent
+# -- Compiling architecture beh of concurrent
+# End time: 16:50:31 on Sep 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" prop_delay_tb 
-# Start time: 16:37:33 on Sep 25,2023
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Sep 25,2023
+# vcom -reportprogress 300 -93 -work work ../src/concurrency_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity concurrency_tb
+# -- Compiling architecture beh of concurrency_tb
+# End time: 16:50:31 on Sep 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" concurrency_tb 
+# Start time: 16:50:31 on Sep 25,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.prop_delay_tb(beh)#1
-# Loading work.prop_delay(beh)#1
+# Loading work.concurrency_tb(beh)#1
+# Loading work.concurrent(beh)#1
+# Loading work.sequential(beh)#1
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# Causality operation skipped due to absence of debug database file
-# End time: 16:50:01 on Sep 25,2023, Elapsed time: 0:12:28
-# Errors: 5, Warnings: 1
+# End time: 16:55:43 on Sep 25,2023, Elapsed time: 0:05:12
+# Errors: 0, Warnings: 0

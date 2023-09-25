@@ -1,0 +1,137 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rjd5748/CPET343/repo/CPET-343/homework/hw1/concurrency/sim/script
+T_opt
+Z1 !s110 1695675031
+VjJ_SJd=ng1S`2m_kV63KI2
+04 14 3 work concurrency_tb beh 1
+=1-b07b2521b1fc-6511f297-2e0-1e00
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Econcurrency_tb
+Z2 w1695673654
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z5 8../src/concurrency_tb.vhd
+Z6 F../src/concurrency_tb.vhd
+l0
+L8
+Vh^4chlogh^=YzEBUocW^n0
+!s100 S]J`6ecFK:n>D=`VOUmiz1
+Z7 OL;C;2019.2;69
+31
+R1
+!i10b 1
+Z8 !s108 1695675031.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../src/concurrency_tb.vhd|
+Z10 !s107 ../src/concurrency_tb.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+DEx4 work 14 concurrency_tb 0 22 h^4chlogh^=YzEBUocW^n0
+l32
+L11
+VGOK7OhIPBKGAeQNig1]Kh3
+!s100 LXL4RK44?;h9Az86OJMch2
+R7
+31
+R1
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Econcurrent
+R2
+R3
+R4
+R0
+Z13 8../../src/concurrent.vhd
+Z14 F../../src/concurrent.vhd
+l0
+L8
+V:?SPN[_RB:h`Y7HGHUZGN1
+!s100 i[ocWfGQ?hR:ITZ>a;Zm`0
+R7
+31
+R1
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-93|-work|work|../../src/concurrent.vhd|
+Z16 !s107 ../../src/concurrent.vhd|
+!i113 0
+R11
+R12
+Abeh
+R3
+R4
+DEx4 work 10 concurrent 0 22 :?SPN[_RB:h`Y7HGHUZGN1
+l19
+L15
+V=3nZ5kDT:JSJ[P:aK<BKY1
+!s100 6Q1O>0[;CaDzMiRIJmn=g0
+R7
+31
+R1
+!i10b 1
+R8
+R15
+R16
+!i113 0
+R11
+R12
+Esequential
+R2
+R3
+R4
+R0
+Z17 8../../src/sequential.vhd
+Z18 F../../src/sequential.vhd
+l0
+L8
+V`FRT<=Ij@XD_zZD3BIQIb0
+!s100 <^E=Xg`:8DAn9Uzjbm?HQ1
+R7
+31
+R1
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-93|-work|work|../../src/sequential.vhd|
+Z20 !s107 ../../src/sequential.vhd|
+!i113 0
+R11
+R12
+Abeh
+R3
+R4
+DEx4 work 10 sequential 0 22 `FRT<=Ij@XD_zZD3BIQIb0
+l19
+L15
+Vdz=N^=nMSK0j>PJE7BI0N0
+!s100 i]Nz=Ffk[fFg3mkaRXe=n1
+R7
+31
+R1
+!i10b 1
+R8
+R19
+R20
+!i113 0
+R11
+R12
