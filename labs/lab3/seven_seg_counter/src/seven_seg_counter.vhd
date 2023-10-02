@@ -1,42 +1,53 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-
-PACKAGE seven_seg_counter_pkg IS
-  COMPONENT seven_seg_counter IS    -- REPLACE adderSingleBitStructural with the name of this file
-
-    Port ( 	clk_50mhz 	    : in  STD_LOGIC; --Input clock
-			offset			: in  STD_LOGIC_VECTOR(3 downto 0) := "0001";
-			reset_n			: in  STD_LOGIC;
-			--
-			seven_seg	    : out STD_LOGIC_VECTOR(6 downto 0)  --7-seg display outputs (g to a) for 7seg display
-			);
-  END COMPONENT;
-END PACKAGE seven_seg_counter_pkg;
-
-
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-library work;
-USE work.bcd2seven_seg_pkg.ALL;
-USE work.generic_adder_beh_pkg.ALL;
-USE work.generic_counter_pkg.ALL;
-
 entity seven_seg_counter is
-	Port ( 	clk_50mhz 	    : in  STD_LOGIC; --Input clock
+	Port ( 	clk 	    : in  STD_LOGIC; --Input clock
 			offset			: in  STD_LOGIC_VECTOR(3 downto 0) := "0001";
-			reset_n			: in  STD_LOGIC;
+			reset			: in  STD_LOGIC;
 			--
-			seven_seg	    : out STD_LOGIC_VECTOR(6 downto 0)  --7-seg display outputs (g to a) for 7seg display
+			seven_seg_outp	    : out STD_LOGIC_VECTOR(6 downto 0)  --7-seg display outputs (g to a) for 7seg display
 			); 
 end seven_seg_counter;
 
 architecture count of seven_seg_counter is --created implementation
 
 signal sum 		: std_logic_vector(3 downto 0) := "0000";
-signal sum_reg 	: std_logic_vector(3 downto 0) := "0000";
+signal sum_sig 	: std_logic_vector(3 downto 0) := "0000";
 signal enable 	: std_logic;
+
+
+component seven_seg is
+	port (
+		clk                : in  std_logic;
+		reset              : in std_logic;
+	  bcd           : in  std_logic_vector(3 downto 0);
+	  seven_seg_out          : out std_logic_vector(6 downto 0)
+	);  
+  end component; 
+
+
+  component generic_counter is
+	port (
+	  clk             : in  std_logic; 
+	  reset           : in  std_logic;
+	  output          : out std_logic
+	);  
+  end component; 
+
+
+  component generic_adder_beh is
+	port (
+	  a             : in  std_logic_vector(3 downto 0); 
+	  b           : in  std_logic_vector(3 downto 0);
+	  cin : in std_logic;
+
+	  sum : out std_logic_vector(3 downto 0);
+	  cout          : out std_logic
+
+	);  
+  end component; 
 
 begin
 
@@ -44,43 +55,47 @@ begin
 gen_add: generic_adder_beh
 	port map(
 	  a => offset,
-	  b => sum_reg,
+	  b => sum_sig,
 	  cin => '0',
 	  --
 	  sum => sum,
 	  cout => open
 	);
-cnt: generic_counter
+counter: generic_counter
     generic map(
-	  max_count => 50000000
+	  max_count => 5000
 	  )
 	port map(
-	  clock => clk_50mhz,
-	  reset_n => reset_n,
+	  clk => clk,
+	  reset => reset,
 	  --
 	  output => enable
 	);
-bdc_convert: bcd2seven_seg
-port map(
-  bcd_number => sum_reg,
-  --
-  seven_segment => seven_seg
+bdc_convert: seven_seg
+port map(	 
+	clk => clk,
+	reset => reset,
+ 	bcd => offset,
+  	--
+  	seven_seg_out => seven_seg_outp
   
 );
-convert : PROCESS(clk_50mhz, reset_n) IS
+convert : PROCESS(clk, reset) IS
   BEGIN
-    --IF (reset_n = '0') THEN
-      --enable    <= '0';
+    IF (reset = '0') THEN
+      enable    <= '0';
 	
-    IF rising_edge(clk_50mhz) THEN
+    IF rising_edge(clk) THEN
       IF (enable = '1') THEN
 	    IF(sum = "1010") THEN
-		   sum_reg <= "0000";
+		   sum_sig <= "0000";
+		   sum <= "0000";
 		Else
-		   sum_reg <= sum;
+		   sum_sig <= sum;
 		END IF;
       END IF;
     END IF;
+	end if;
   END PROCESS convert;
 
 end count;

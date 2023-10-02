@@ -20,16 +20,17 @@ n@_opt
 Z4 OL;O;2019.2;69
 R0
 T_opt1
-!s110 1696278016
-VUBhC^fk20R;EH]UB5L[B?1
+!s110 1696280372
+V06R0HkZ?kFSlH;aL`8fBB3
 R1
-=1-b07b2521b033-651b25ff-32c-5e0
+=1-b07b2521b033-651b2f34-1f-43d4
 R2
 R3
 n@_opt1
 R4
+R0
 Eseven_seg
-Z5 w1696277187
+Z5 w1696279101
 Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -38,13 +39,13 @@ Z10 8../../src/seven_seg.vhd
 Z11 F../../src/seven_seg.vhd
 l0
 L9
-VFa0jm2l9ZV`eLa`HBi<QI0
-!s100 J99kC=NZBco7RHaMHf78<1
+VCYLDEfBlX17:>XINaOTSX3
+!s100 XWYClobOQ]]JOCQ]E<ZSQ2
 Z12 OL;C;2019.2;69
 31
-Z13 !s110 1696278015
+Z13 !s110 1696280411
 !i10b 1
-Z14 !s108 1696278015.000000
+Z14 !s108 1696280411.000000
 Z15 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
 Z16 !s107 ../../src/seven_seg.vhd|
 !i113 0
@@ -54,11 +55,11 @@ Abeh
 R6
 R7
 R8
-DEx4 work 9 seven_seg 0 22 Fa0jm2l9ZV`eLa`HBi<QI0
+DEx4 work 9 seven_seg 0 22 CYLDEfBlX17:>XINaOTSX3
 l20
 L18
-V5fWPOb<RPD7nXhc1VDSjU0
-!s100 Q[6RKib??0AOi[ck1GYa21
+VlEXGF7IRN@A9`g`mAK:QM1
+!s100 I0`gCkP;^3<M6hWPb0WV`2
 R12
 31
 R13
@@ -95,11 +96,11 @@ Aarch
 R6
 R7
 R8
-DEx4 work 12 seven_seg_tb 0 22 =Fn8URJ<?]?=oFC]eNCod3
+Z24 DEx4 work 12 seven_seg_tb 0 22 =Fn8URJ<?]?=oFC]eNCod3
 l29
 L12
-VCHdVbL?A4MlX5^bNV483k2
-!s100 kT8cbTmhGc9=ELD:_f0L92
+Z25 VCHdVbL?A4MlX5^bNV483k2
+Z26 !s100 kT8cbTmhGc9=ELD:_f0L92
 R12
 31
 R13

@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:20:15 on Oct 02,2023
+# Start time: 17:00:11 on Oct 02,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,10 +22,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 16:20:15 on Oct 02,2023, Elapsed time: 0:00:00
+# End time: 17:00:11 on Oct 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:20:15 on Oct 02,2023
+# Start time: 17:00:11 on Oct 02,2023
 # vcom -reportprogress 300 -93 -work work ../src/seven_seg_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -34,11 +34,11 @@
 # -- Compiling entity seven_seg_tb
 # -- Compiling architecture arch of seven_seg_tb
 # ** Warning: ../src/seven_seg_tb.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 16:20:15 on Oct 02,2023, Elapsed time: 0:00:00
+# End time: 17:00:11 on Oct 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" seven_seg_tb 
-# Start time: 16:20:15 on Oct 02,2023
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 17:00:11 on Oct 02,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -53,10 +53,12 @@
 # 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hig9035  Hostname: GOL-1360-02  ProcessID: 476
-#           Attempting to use alternate WLF file "./wlfte11e94".
+#           Attempting to use alternate WLF file "./wlft9k5qr3".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfte11e94
+#           Using alternate file: ./wlft9k5qr3
 # ** Note: ****************** sequential testbench start ****************
 #    Time: 0 ns  Iteration: 0  Instance: /seven_seg_tb
 # ** Note: ****************** sequential testbench stop ****************
 #    Time: 480 ns  Iteration: 0  Instance: /seven_seg_tb
+# End time: 17:02:45 on Oct 02,2023, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 2

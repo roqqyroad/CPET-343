@@ -32,7 +32,7 @@ begin
 			when "0101" => seven_seg_out <= "0010010"; --5
 			when "0110" => seven_seg_out <= "0000010"; --6
 			when "0111" => seven_seg_out <= "1111000"; --7
-			when "1000" => seven_seg_out <= "1111111"; --8
+			when "1000" => seven_seg_out <= "0000000"; --8
 			when "1001" => seven_seg_out <= "0011000"; --9
 			when others => seven_seg_out <= "0111111"; --used for an error state
 		end case;

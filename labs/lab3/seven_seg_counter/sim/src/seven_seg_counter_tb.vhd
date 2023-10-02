@@ -1,76 +1,66 @@
-------------------------------------------------------------------------------
--- Rachel DuBois
-------------------------------------------------------------------------------
-    
+-------------------------------------------------------------------------------
+-- Dr. Kaputa
+-- seven segment test bench
+-------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
+entity seven_seg_counter_tb is
+end seven_seg_counter_tb;
 
-LIBRARY work;
-USE work.bcd2seven_seg_pkg.ALL;
-USE work.seven_seg_counter_pkg.ALL;
+architecture arch of seven_seg_counter_tb is
 
-ENTITY seven_seg_counter_tb IS
-END seven_seg_counter_tb;
+component seven_seg_counter is
+  port (
+    clk             : in std_logic; 
+    reset           : in std_logic;
+    offset             : in std_logic_vector(3 downto 0);
+    seven_seg_outp   : out std_logic_vector(6 downto 0)
+  );  
+end component; 
 
-ARCHITECTURE arch OF seven_seg_counter_tb IS
-  SIGNAL sim_done : boolean   := false;
-  -- Constants for test bench design
-  CONSTANT PERIOD_c    : time    := 20 ns;
-  CONSTANT MAX_COUNT_c : integer := 10;
+signal output       : std_logic;
+constant period     : time := 20ns;                                              
+signal clk          : std_logic := '0';
+signal reset        : std_logic := '1';
+signal offset          : std_logic_vector(3 downto 0) := "0000";
 
-  -- signals for test bench design
-  SIGNAL offset_tb : std_logic_vector(3 DOWNTO 0) := "0001";
-  SIGNAL hex0          : std_logic_vector(6 DOWNTO 0) := (OTHERS => '0');
-  SIGNAL clk_tb		   : std_logic := '0';
-  signal reset_n_tb	   : std_logic;
+begin
 
-  -- create a new type, an array seven-segment values (ie: 2D array)
-  TYPE seven_seg_t IS ARRAY (0 TO MAX_COUNT_c) OF std_logic_vector (6 DOWNTO 0);
-  SIGNAL seven_seg_values : seven_seg_t := (
-                          ZERO_c, ONE_c, TWO_c, THREE_c, FOUR_c, FIVE_c,
-                          SIX_c, SEVEN_c, EIGHT_c, NINE_c, BLANK_c);
+-- bcd iteration
+sequential_tb : process 
+    begin
+      report "****************** sequential testbench start ****************";
+      wait for 80 ns;   -- let all the initial conditions trickle through
+      for i in 0 to 9 loop
+        offset <= std_logic_vector(unsigned(offset) + 1 );
+        wait for 40 ns;
+      end loop;
+      report "****************** sequential testbench stop ****************";
+      wait;
+  end process; 
 
-  
-BEGIN
-clk_tb <= NOT clk_tb AFTER PERIOD_c/2 WHEN (NOT sim_done) ELSE '0';
-  -- instantiate the Unit Under Test
-  UUT : seven_seg_counter PORT MAP(
-    clk_50mhz	  => clk_tb,
-    offset    => offset_tb,
-	reset_n   => reset_n_tb,
-    
-    seven_seg => hex0
+-- clock process
+clock: process
+  begin
+    clk <= not clk;
+    wait for period/2;
+end process; 
+ 
+-- reset process
+async_reset: process
+  begin
+    wait for 2 * period;
+    reset <= '0';
+    wait;
+end process; 
+
+uut: seven_seg_counter  
+  port map(        
+    clk            => clk,
+    reset          => reset,
+    offset            => offset,
+    seven_seg_outp  => open
   );
-
-  -----------------------------------------------------------------------------
-  -- PROCESS: Stimulus will generate a counter that counts from 0 to max count
-  -- and then stop. For each input, out will be verified.
-  -----------------------------------------------------------------------------
-  stimulus : PROCESS
-  BEGIN
-    REPORT "Simulation Running...";
-	reset_n_tb <= '0';
-    -- now lets sync the stimulus to the clock
-    -- and move data off clock edge
-    WAIT UNTIL (clk_tb'event and clk_tb = '1');
-    WAIT FOR 2 ns;
-
-    reset_n_tb <= '1';
-
-    WAIT FOR 75 * PERIOD_c;
-  
-
-    -- we are done to wait two more clocks & set flag sim_done to true
-    WAIT FOR 2 * PERIOD_c;
-    WAIT UNTIL clk_tb = '0';
-    sim_done <= true;
-
-    -- Added a simple message to say we are done
-    REPORT "Simulation Completed Successfully.";
-
-    WAIT;                               -- wait here forever
-END PROCESS;
-
-END ARCHITECTURE arch;
+end arch;
