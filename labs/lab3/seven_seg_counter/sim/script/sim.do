@@ -6,4 +6,4 @@ vcom -93 -work work ../../src/seven_seg_counter.vhd
 vcom -93 -work work ../src/seven_seg_counter_tb.vhd
 vsim -voptargs=+acc seven_seg_counter_tb
 do wave.do
-run -all
+run 1500ns

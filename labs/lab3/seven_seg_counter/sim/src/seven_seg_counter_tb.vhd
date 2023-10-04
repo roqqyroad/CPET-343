@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 -- Dr. Kaputa
--- seven segment test bench
+-- seven segment counter test bench
+-- Edited by Rachel DuBois for use as the Seven Seg Counter TB
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -15,7 +16,7 @@ component seven_seg_counter is
   port (
     clk             : in std_logic; 
     reset           : in std_logic;
-    offset             : in std_logic_vector(3 downto 0);
+    --bcd             : in std_logic_vector(3 downto 0);
     seven_seg_outp   : out std_logic_vector(6 downto 0)
   );  
 end component; 
@@ -24,7 +25,7 @@ signal output       : std_logic;
 constant period     : time := 20ns;                                              
 signal clk          : std_logic := '0';
 signal reset        : std_logic := '1';
-signal offset          : std_logic_vector(3 downto 0) := "0000";
+signal bcd          : std_logic_vector(3 downto 0) := "0000";
 
 begin
 
@@ -34,7 +35,7 @@ sequential_tb : process
       report "****************** sequential testbench start ****************";
       wait for 80 ns;   -- let all the initial conditions trickle through
       for i in 0 to 9 loop
-        offset <= std_logic_vector(unsigned(offset) + 1 );
+        bcd <= std_logic_vector(unsigned(bcd) + 1 );
         wait for 40 ns;
       end loop;
       report "****************** sequential testbench stop ****************";
@@ -60,7 +61,7 @@ uut: seven_seg_counter
   port map(        
     clk            => clk,
     reset          => reset,
-    offset            => offset,
+    --bcd            => bcd,
     seven_seg_outp  => open
   );
 end arch;

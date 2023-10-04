@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:52:17 on Oct 02,2023
+# Start time: 16:10:49 on Oct 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/generic_adder_beh.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,20 +22,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity generic_adder_beh
 # -- Compiling architecture beh of generic_adder_beh
-# End time: 17:52:18 on Oct 02,2023, Elapsed time: 0:00:01
+# End time: 16:10:49 on Oct 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:52:18 on Oct 02,2023
+# Start time: 16:10:49 on Oct 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/generic_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_counter
 # -- Compiling architecture beh of generic_counter
-# End time: 17:52:18 on Oct 02,2023, Elapsed time: 0:00:00
+# End time: 16:10:49 on Oct 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:52:18 on Oct 02,2023
+# Start time: 16:10:49 on Oct 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg/src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,21 +43,21 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 17:52:18 on Oct 02,2023, Elapsed time: 0:00:00
+# End time: 16:10:50 on Oct 04,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:52:18 on Oct 02,2023
+# Start time: 16:10:50 on Oct 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity seven_seg_counter
-# -- Compiling architecture count of seven_seg_counter
-# End time: 17:52:18 on Oct 02,2023, Elapsed time: 0:00:00
+# -- Compiling architecture beh of seven_seg_counter
+# End time: 16:10:50 on Oct 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:52:18 on Oct 02,2023
+# Start time: 16:10:50 on Oct 04,2023
 # vcom -reportprogress 300 -93 -work work ../src/seven_seg_counter_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,18 +65,18 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity seven_seg_counter_tb
 # -- Compiling architecture arch of seven_seg_counter_tb
-# ** Warning: ../src/seven_seg_counter_tb.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 17:52:18 on Oct 02,2023, Elapsed time: 0:00:00
+# ** Warning: ../src/seven_seg_counter_tb.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:10:50 on Oct 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" seven_seg_counter_tb 
-# Start time: 17:52:18 on Oct 02,2023
+# Start time: 16:10:50 on Oct 04,2023
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.seven_seg_counter_tb(arch)#1
-# Loading work.seven_seg_counter(count)#1
+# Loading work.seven_seg_counter(beh)#1
 # Loading work.generic_adder_beh(beh)#1
 # Loading work.generic_counter(beh)#1
 # Loading work.seven_seg(beh)#1
@@ -90,7 +90,3 @@
 #    Time: 0 ns  Iteration: 0  Instance: /seven_seg_counter_tb
 # ** Note: ****************** sequential testbench stop ****************
 #    Time: 480 ns  Iteration: 0  Instance: /seven_seg_counter_tb
-# Break key hit
-# Break in Process clock at ../src/seven_seg_counter_tb.vhd line 48
-# End time: 17:53:06 on Oct 02,2023, Elapsed time: 0:00:48
-# Errors: 11, Warnings: 0
