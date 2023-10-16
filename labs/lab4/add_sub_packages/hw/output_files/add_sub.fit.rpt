@@ -1,5 +1,5 @@
 Fitter report for add_sub
-Mon Oct 16 13:53:43 2023
+Mon Oct 16 16:13:04 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Oct 16 13:53:43 2023           ;
+; Fitter Status                   ; Successful - Mon Oct 16 16:13:04 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; add_sub                                         ;
 ; Top-level Entity Name           ; add_sub                                         ;
@@ -156,7 +156,7 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
+;     Processor 3            ;   0.1%      ;
 ;     Processors 4-10        ;   0.1%      ;
 +----------------------------+-------------+
 
@@ -209,7 +209,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.pin.
+The pin-out file can be found in C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -1828,17 +1828,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 7166 megabytes
-    Info: Processing ended: Mon Oct 16 13:53:43 2023
+    Info: Processing ended: Mon Oct 16 16:13:05 2023
     Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Total CPU time (on all processors): 00:00:48
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.fit.smsg.
+The suppressed messages can be found in C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/hw/output_files/add_sub.fit.smsg.
 
 

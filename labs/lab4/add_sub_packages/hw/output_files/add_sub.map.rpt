@@ -1,5 +1,5 @@
 Analysis & Synthesis report for add_sub
-Mon Oct 16 13:53:17 2023
+Mon Oct 16 16:12:39 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 16 13:53:17 2023           ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 16 16:12:39 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; add_sub                                         ;
 ; Top-level Entity Name           ; add_sub                                         ;
@@ -170,18 +170,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; ../../src/rising_edge_synchronizer.vhd ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd ;         ;
-; ../../src/components.vhd               ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/components.vhd               ;         ;
-; ../../src/seven_seg.vhd                ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd                ;         ;
-; ../../src/generic_add_sub.vhd          ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd          ;         ;
-; ../../src/synchronizer_3bit.vhd        ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd        ;         ;
-; ../../src/add_sub.vhd                  ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd                  ;         ;
-+----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                       ; Library ;
++----------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
+; ../../src/rising_edge_synchronizer.vhd ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd ;         ;
+; ../../src/components.vhd               ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/components.vhd               ;         ;
+; ../../src/seven_seg.vhd                ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd                ;         ;
+; ../../src/generic_add_sub.vhd          ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd          ;         ;
+; ../../src/synchronizer_3bit.vhd        ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd        ;         ;
+; ../../src/add_sub.vhd                  ; yes             ; User VHDL File  ; C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd                  ;         ;
++----------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -325,32 +325,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Oct 16 13:53:09 2023
+    Info: Processing started: Mon Oct 16 16:12:31 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off add_sub -c add_sub
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd
-    Info (12022): Found design unit 1: rising_edge_synchronizer-beh File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd Line: 17
-    Info (12023): Found entity 1: rising_edge_synchronizer File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd Line: 8
-Info (12021): Found 1 design units, including 0 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/components.vhd
-    Info (12022): Found design unit 1: components File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/components.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/seven_seg.vhd
-    Info (12022): Found design unit 1: seven_seg-beh File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd Line: 15
-    Info (12023): Found entity 1: seven_seg File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd
-    Info (12022): Found design unit 1: generic_add_sub-beh File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd Line: 21
-    Info (12023): Found entity 1: generic_add_sub File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd
-    Info (12022): Found design unit 1: synchronizer_3bit-beh File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd Line: 17
-    Info (12023): Found entity 1: synchronizer_3bit File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet-343/labs/lab4/add_sub_packages/src/add_sub.vhd
-    Info (12022): Found design unit 1: add_sub-beh File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 24
-    Info (12023): Found entity 1: add_sub File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd
+    Info (12022): Found design unit 1: rising_edge_synchronizer-beh File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd Line: 17
+    Info (12023): Found entity 1: rising_edge_synchronizer File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/rising_edge_synchronizer.vhd Line: 8
+Info (12021): Found 1 design units, including 0 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/components.vhd
+    Info (12022): Found design unit 1: components File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/components.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/seven_seg.vhd
+    Info (12022): Found design unit 1: seven_seg-beh File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd Line: 15
+    Info (12023): Found entity 1: seven_seg File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/seven_seg.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd
+    Info (12022): Found design unit 1: generic_add_sub-beh File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd Line: 21
+    Info (12023): Found entity 1: generic_add_sub File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/generic_add_sub.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd
+    Info (12022): Found design unit 1: synchronizer_3bit-beh File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd Line: 17
+    Info (12023): Found entity 1: synchronizer_3bit File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/synchronizer_3bit.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/rjd5748/cpet343/repo/cpet-343/labs/lab4/add_sub_packages/src/add_sub.vhd
+    Info (12022): Found design unit 1: add_sub-beh File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 24
+    Info (12023): Found entity 1: add_sub File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 10
 Info (12127): Elaborating entity "add_sub" for the top level hierarchy
-Info (12128): Elaborating entity "synchronizer_3bit" for hierarchy "synchronizer_3bit:u_a_sync" File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 40
-Info (12128): Elaborating entity "generic_add_sub" for hierarchy "generic_add_sub:u_add_sub" File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 56
-Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:u_add_btn" File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 67
-Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:a_lcd" File: C:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 105
+Info (12128): Elaborating entity "synchronizer_3bit" for hierarchy "synchronizer_3bit:u_a_sync" File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 40
+Info (12128): Elaborating entity "generic_add_sub" for hierarchy "generic_add_sub:u_add_sub" File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 56
+Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:u_add_btn" File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 67
+Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:a_lcd" File: C:/Users/rjd5748/CPET343/repo/CPET-343/labs/lab4/add_sub_packages/src/add_sub.vhd Line: 105
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -359,9 +359,9 @@ Info (21057): Implemented 78 device resources after synthesis - the final resour
     Info (21059): Implemented 21 output pins
     Info (21061): Implemented 47 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Mon Oct 16 13:53:17 2023
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Mon Oct 16 16:12:39 2023
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
