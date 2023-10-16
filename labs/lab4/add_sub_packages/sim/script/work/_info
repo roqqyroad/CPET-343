@@ -1,0 +1,286 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rjd5748/CPET-343/labs/lab4/add_sub_packages/sim/script
+T_opt
+!s110 1697478515
+V?W4]cGGLDlPM@;DM`UiVk1
+04 10 4 work add_sub_tb arch 1
+=1-b07b2521b033-652d7772-294-40c0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Eadd_sub
+Z1 w1697474368
+Z2 DPx4 work 10 components 0 22 PJoWhiHLPTA[=JFg7Hj[d3
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/add_sub.vhd
+Z7 F../../src/add_sub.vhd
+l0
+L10
+VWCR[nO5dX:]5[2jDV:RVz0
+!s100 Q?iFgahk_X9De6BAR^PNl0
+Z8 OL;C;2019.2;69
+31
+Z9 !s110 1697478513
+!i10b 1
+Z10 !s108 1697478513.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|../../src/add_sub.vhd|
+Z12 !s107 ../../src/add_sub.vhd|
+!i113 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+R5
+DEx4 work 7 add_sub 0 22 WCR[nO5dX:]5[2jDV:RVz0
+l38
+L24
+V5G3G3ZGk`Cn7:Pa8TnT@d0
+!s100 gi[7c;F6bdiGNLcYCG65L1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eadd_sub_tb
+R1
+Z15 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R3
+R4
+R5
+R0
+Z16 8../src/add_sub_tb.vhd
+Z17 F../src/add_sub_tb.vhd
+l0
+L10
+Vd<eFVjmU;bTPD267hfBEQ0
+!s100 J[UIBmY4D27PXfQT5ok?K1
+R8
+31
+Z18 !s110 1697478514
+!i10b 1
+Z19 !s108 1697478514.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|../src/add_sub_tb.vhd|
+Z21 !s107 ../src/add_sub_tb.vhd|
+!i113 0
+R13
+R14
+Aarch
+R15
+R3
+R4
+R5
+DEx4 work 10 add_sub_tb 0 22 d<eFVjmU;bTPD267hfBEQ0
+l41
+L13
+V]M3P;ak1ZASXc;GGJG><h0
+!s100 0_=Jh<dRh?nZEUE3YPUHz2
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R13
+R14
+Pcomponents
+R3
+R4
+R5
+R1
+R0
+8../../src/components.vhd
+F../../src/components.vhd
+l0
+L9
+VPJoWhiHLPTA[=JFg7Hj[d3
+!s100 YJK65@P6Y0Hlkc97kz@A=0
+R8
+31
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-93|-work|work|../../src/components.vhd|
+!s107 ../../src/components.vhd|
+!i113 0
+R13
+R14
+Egeneric_add_sub
+R1
+R3
+R4
+R5
+R0
+Z22 8../../src/generic_add_sub.vhd
+Z23 F../../src/generic_add_sub.vhd
+l0
+L9
+VLZ3PlUU_K;^M[2m[Z6V?D3
+!s100 IAR1RRiOW8mbg_2cFRBz`1
+R8
+31
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-93|-work|work|../../src/generic_add_sub.vhd|
+Z25 !s107 ../../src/generic_add_sub.vhd|
+!i113 0
+R13
+R14
+Abeh
+R3
+R4
+R5
+DEx4 work 15 generic_add_sub 0 22 LZ3PlUU_K;^M[2m[Z6V?D3
+l26
+L21
+V?1Te<<PJZf1BoE1^6R_Df3
+!s100 :>Z5KgIcTPA4CA;X612id0
+R8
+31
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 0
+R13
+R14
+Erising_edge_synchronizer
+R1
+R4
+R5
+R0
+Z26 8../../src/rising_edge_synchronizer.vhd
+Z27 F../../src/rising_edge_synchronizer.vhd
+l0
+L8
+V7^gf[0AcMz;oFDKIj=b3N3
+!s100 8>=9Tc6dAVdENebjXiG<30
+R8
+31
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z29 !s107 ../../src/rising_edge_synchronizer.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 24 rising_edge_synchronizer 0 22 7^gf[0AcMz;oFDKIj=b3N3
+l23
+L17
+V3[Zc:cd7cKK`Uk6V^JOA[0
+!s100 @e1I9@Enc4[;L5b`c?VdR2
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 0
+R13
+R14
+Eseven_seg
+R1
+R4
+R5
+R0
+Z30 8../../src/seven_seg.vhd
+Z31 F../../src/seven_seg.vhd
+l0
+L8
+VB1CUb757eTiof?6g_B;1f1
+!s100 ^0K0e98LkYC@b2HMce>mE0
+R8
+31
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
+Z33 !s107 ../../src/seven_seg.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 9 seven_seg 0 22 B1CUb757eTiof?6g_B;1f1
+l17
+L15
+Ve;GDhDe75L[ANcW`>43oV0
+!s100 B;TIiQ672B3a[25OB9Jm63
+R8
+31
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 0
+R13
+R14
+Esynchronizer_3bit
+R1
+R4
+R5
+R0
+Z34 8../../src/synchronizer_3bit.vhd
+Z35 F../../src/synchronizer_3bit.vhd
+l0
+L8
+Vl2k=[7`6HZmaF9S8XYHzJ1
+!s100 moKUPo=`8oP24i;=^`T`[1
+R8
+31
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-93|-work|work|../../src/synchronizer_3bit.vhd|
+Z37 !s107 ../../src/synchronizer_3bit.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 17 synchronizer_3bit 0 22 l2k=[7`6HZmaF9S8XYHzJ1
+l22
+L17
+VGkf88<]b20bJ0P@^2I;oX0
+!s100 iSBYb@E2I;@j0F;dY18YT3
+R8
+31
+R9
+!i10b 1
+R10
+R36
+R37
+!i113 0
+R13
+R14

@@ -17,6 +17,7 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output_files
 
 # 2] include your relative path files here
 set_global_assignment -name VHDL_FILE ../../src/rising_edge_synchronizer.vhd
+set_global_assignment -name VHDL_FILE ../../src/components.vhd
 set_global_assignment -name VHDL_FILE ../../src/seven_seg.vhd
 set_global_assignment -name VHDL_FILE ../../src/generic_add_sub.vhd
 set_global_assignment -name VHDL_FILE ../../src/synchronizer_3bit.vhd

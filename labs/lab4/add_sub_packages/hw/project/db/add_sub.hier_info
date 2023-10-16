@@ -1,0 +1,255 @@
+|add_sub
+clk => synchronizer_3bit:u_a_sync.clk
+clk => result_sig[0].CLK
+clk => result_sig[1].CLK
+clk => result_sig[2].CLK
+clk => result_sig[3].CLK
+clk => flag.CLK
+clk => synchronizer_3bit:u_b_sync.clk
+clk => rising_edge_synchronizer:u_add_btn.clk
+clk => rising_edge_synchronizer:u_sub_btn.clk
+reset => synchronizer_3bit:u_a_sync.reset
+reset => result_sig[0].ACLR
+reset => result_sig[1].ACLR
+reset => result_sig[2].ACLR
+reset => result_sig[3].ACLR
+reset => flag.ACLR
+reset => synchronizer_3bit:u_b_sync.reset
+reset => rising_edge_synchronizer:u_add_btn.reset
+reset => rising_edge_synchronizer:u_sub_btn.reset
+a[0] => synchronizer_3bit:u_a_sync.async_in[0]
+a[1] => synchronizer_3bit:u_a_sync.async_in[1]
+a[2] => synchronizer_3bit:u_a_sync.async_in[2]
+b[0] => synchronizer_3bit:u_b_sync.async_in[0]
+b[1] => synchronizer_3bit:u_b_sync.async_in[1]
+b[2] => synchronizer_3bit:u_b_sync.async_in[2]
+add_btn => rising_edge_synchronizer:u_add_btn.input
+sub_btn => rising_edge_synchronizer:u_sub_btn.input
+a_bcd[0] <= seven_seg:a_lcd.seven_seg_out[0]
+a_bcd[1] <= seven_seg:a_lcd.seven_seg_out[1]
+a_bcd[2] <= seven_seg:a_lcd.seven_seg_out[2]
+a_bcd[3] <= seven_seg:a_lcd.seven_seg_out[3]
+a_bcd[4] <= seven_seg:a_lcd.seven_seg_out[4]
+a_bcd[5] <= seven_seg:a_lcd.seven_seg_out[5]
+a_bcd[6] <= seven_seg:a_lcd.seven_seg_out[6]
+b_bcd[0] <= seven_seg:b_lcd.seven_seg_out[0]
+b_bcd[1] <= seven_seg:b_lcd.seven_seg_out[1]
+b_bcd[2] <= seven_seg:b_lcd.seven_seg_out[2]
+b_bcd[3] <= seven_seg:b_lcd.seven_seg_out[3]
+b_bcd[4] <= seven_seg:b_lcd.seven_seg_out[4]
+b_bcd[5] <= seven_seg:b_lcd.seven_seg_out[5]
+b_bcd[6] <= seven_seg:b_lcd.seven_seg_out[6]
+result_bcd[0] <= seven_seg:result_lcd.seven_seg_out[0]
+result_bcd[1] <= seven_seg:result_lcd.seven_seg_out[1]
+result_bcd[2] <= seven_seg:result_lcd.seven_seg_out[2]
+result_bcd[3] <= seven_seg:result_lcd.seven_seg_out[3]
+result_bcd[4] <= seven_seg:result_lcd.seven_seg_out[4]
+result_bcd[5] <= seven_seg:result_lcd.seven_seg_out[5]
+result_bcd[6] <= seven_seg:result_lcd.seven_seg_out[6]
+
+
+|add_sub|synchronizer_3bit:u_a_sync
+clk => flop2[0].CLK
+clk => flop2[1].CLK
+clk => flop2[2].CLK
+clk => flop1[0].CLK
+clk => flop1[1].CLK
+clk => flop1[2].CLK
+reset => flop2[0].ACLR
+reset => flop2[1].ACLR
+reset => flop2[2].ACLR
+reset => flop1[0].ACLR
+reset => flop1[1].ACLR
+reset => flop1[2].ACLR
+async_in[0] => flop1[0].DATAIN
+async_in[1] => flop1[1].DATAIN
+async_in[2] => flop1[2].DATAIN
+sync_out[0] <= flop2[0].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[1] <= flop2[1].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[2] <= flop2[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|synchronizer_3bit:u_b_sync
+clk => flop2[0].CLK
+clk => flop2[1].CLK
+clk => flop2[2].CLK
+clk => flop1[0].CLK
+clk => flop1[1].CLK
+clk => flop1[2].CLK
+reset => flop2[0].ACLR
+reset => flop2[1].ACLR
+reset => flop2[2].ACLR
+reset => flop1[0].ACLR
+reset => flop1[1].ACLR
+reset => flop1[2].ACLR
+async_in[0] => flop1[0].DATAIN
+async_in[1] => flop1[1].DATAIN
+async_in[2] => flop1[2].DATAIN
+sync_out[0] <= flop2[0].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[1] <= flop2[1].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[2] <= flop2[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|generic_add_sub:u_add_sub
+a[0] => Add0.IN3
+a[0] => Add1.IN6
+a[1] => Add0.IN2
+a[1] => Add1.IN5
+a[2] => Add0.IN1
+a[2] => Add1.IN4
+b[0] => Add0.IN6
+b[0] => Add1.IN3
+b[1] => Add0.IN5
+b[1] => Add1.IN2
+b[2] => Add0.IN4
+b[2] => Add1.IN1
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+c[0] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|rising_edge_synchronizer:u_add_btn
+clk => input_zzz.CLK
+clk => edge~reg0.CLK
+clk => input_zz.CLK
+clk => input_z.CLK
+reset => input_zzz.PRESET
+reset => edge~reg0.ACLR
+reset => input_zz.PRESET
+reset => input_z.PRESET
+input => input_z.DATAIN
+edge <= edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|rising_edge_synchronizer:u_sub_btn
+clk => input_zzz.CLK
+clk => edge~reg0.CLK
+clk => input_zz.CLK
+clk => input_z.CLK
+reset => input_zzz.PRESET
+reset => edge~reg0.ACLR
+reset => input_zz.PRESET
+reset => input_z.PRESET
+input => input_z.DATAIN
+edge <= edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:a_lcd
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+seven_seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:b_lcd
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+seven_seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:result_lcd
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+seven_seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
