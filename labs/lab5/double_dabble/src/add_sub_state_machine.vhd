@@ -5,7 +5,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.components.all;
 
 entity add_sub_state_machine is
   port (
