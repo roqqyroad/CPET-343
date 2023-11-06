@@ -11,19 +11,44 @@ entity add_sub_state_machine is
   port (
     clk           : in  std_logic;
     reset         : in  std_logic;
-    switch        : in  std_logic_vector(7 downto 0);
-    btn           : in  std_logic; --keep track of the button presses to progress the state machine 
-    led      : out std_logic_vector(3 downto 0);
-    bcd_0    : out std_logic_vector(6 downto 0);
-    bcd_1    : out std_logic_vector(6 downto 0);
-    bcd_2    : out std_logic_vector(6 downto 0);
-    bcd_3    : out std_logic_vector(6 downto 0);
-    bcd_4    : out std_logic_vector(6 downto 0);
-    bcd_5    : out std_logic_vector(6 downto 0)
+    a_in        : in  STD_LOGIC_VECTOR(7 downto 0) := "00000000"; --inputs
+		pb_in       : in  STD_LOGIC := '0'; --push_button to advance state
+		--
+		hex2        : out STD_LOGIC_VECTOR(6 downto 0);  --7-seg display outputs (g to a)
+		hex1        : out STD_LOGIC_VECTOR(6 downto 0);
+		hex0        : out STD_LOGIC_VECTOR(6 downto 0);
+		ledOut      : out STD_LOGIC_VECTOR(3 downto 0) := "0000" 
   );
 end entity add_sub_state_machine;
 
 architecture beh of add_sub_state_machine is
+
+--state definitions
+type state_type is (input_a, input_b, disp_sum, disp_diff); --states
+signal current_state, next_state : state_type; --defining what holds the states
+--signal declarations 
+--synchronized/edge detecting signals
+signal pb_sync    : std_logic := '0';
+--signal pbz_sync   : std_logic := '0';
+signal a_sync     : std_logic_vector(7 downto 0) := "00000000";
+signal b_sync     : std_logic_vector(7 downto 0) := "00000000";
+signal reset_edge : std_logic;
+signal add_out    : std_logic_vector(7 downto 0) := "00000001";
+signal sub_out    : std_logic_vector(7 downto 0) := "00000001";
+signal output     : std_logic_vector(7 downto 0) := "00000000";
+signal out_12b    : std_logic_vector(11 downto 0):= "000000000000";
+signal coutSigA    : std_logic := '0';
+signal coutSigS    : std_logic := '0';
+--signal pbhold     : std_logic := '0';
+--hex output signals
+signal hex1s      : std_logic_vector(3 downto 0) := "0000";
+signal hex10s     : std_logic_vector(3 downto 0) := "0000";
+signal hex100s    : std_logic_vector(3 downto 0) := "0000";
+--register signals
+signal a_reg      : std_logic_vector(7 downto 0) := "00000000";
+signal b_reg      : std_logic_vector(7 downto 0) := "00000000";
+signal add_reg    : std_logic_vector(7 downto 0) := "00000000";
+signal sub_reg    : std_logic_vector(7 downto 0) := "00000000";
 
 
 begin
@@ -80,3 +105,5 @@ result_lcd: seven_seg
   a_sync_bcd <= '0' & a_sync;
   b_sync_bcd <= '0' & b_sync;
 end beh;
+
+
