@@ -1,61 +1,17 @@
---*****************************************************************************
---***************************  VHDL Source Code  ******************************
---*****************************************************************************
---
---  DESIGNER NAME:  <enter your name here>
---
---       LAB NAME:  Labx: <name of lab>
---
---      FILE NAME:  add_sub.vhd
---
--------------------------------------------------------------------------------
---
---  DESCRIPTION
---    This file uses an FSM to add or subtract two 8-bit values 
---    set with the switches on the board.  The state is advanced 
---	  by using the push button on the board.
---  REVISION HISTORY
---
---  _______________________________________________________________________
--- |  DATE    | USER | Ver |  Description                                  |
--- |==========+======+=====+================================================
--- |          |      |     |
--- |          |      |     |
---
---*****************************************************************************
---*****************************************************************************
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
 
-PACKAGE add_sub_pkg IS
-  COMPONENT add_sub IS    -- REPLACE adderSingleBitStructural with the name of this file
-
-    Port ( 	clk_50mhz 	    : in  STD_LOGIC; --Input clock
-			a_in			: in  STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-			--b_in			: in  STD_LOGIC_VECTOR(7 downto 0) := "00000000";
-			reset_n			: in  STD_LOGIC;
-			pb_in		: in  STD_LOGIC := '0';
-			--
-			hex2	    : out STD_LOGIC_VECTOR(6 downto 0);  --7-seg display outputs (g to a)
-			hex1	    : out STD_LOGIC_VECTOR(6 downto 0);  --for 7seg display
-			hex0	    : out STD_LOGIC_VECTOR(6 downto 0);
-			ledOut      : out STD_LOGIC_VECTOR(3 downto 0) := "0000"
-			);
-  END COMPONENT;
-END PACKAGE add_sub_pkg;
 
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-library work;
-USE work.bcd2seven_seg_pkg.ALL;
-USE work.generic_adder_beh_pkg.ALL;
-USE work.generic_subtractor_beh_pkg.ALL;
-USE work.edge_detect_pkg.ALL;
-USE work.clock_synchronizer_pkg.ALL;
-USE work.double_dabble_pkg.ALL;
+--library work;
+--USE work.bcd2seven_seg_pkg.ALL;
+--USE work.generic_adder_beh_pkg.ALL;
+--USE work.generic_subtractor_beh_pkg.ALL;
+--USE work.edge_detect_pkg.ALL;
+--USE work.clock_synchronizer_pkg.ALL;
+--USE work.double_dabble_pkg.ALL;
 
 entity add_sub is
 	Port ( 	clk_50mhz   : in  STD_LOGIC; --Input clock

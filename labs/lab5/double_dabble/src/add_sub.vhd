@@ -3,9 +3,29 @@
 -- adder and subtractor state machine
 -------------------------------------------------------------------------------
 library ieee;
+use ieee.std_logic_1164.ALL;
+
+PACKAGE add_sub_pkg IS
+  COMPONENT add_sub IS    -- REPLACE adderSingleBitStructural with the name of this file
+
+    Port ( 	clk_50mhz 	    : in  STD_LOGIC; --Input clock
+			a_in			: in  STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+			--b_in			: in  STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+			reset			: in  STD_LOGIC;
+			pb_in		: in  STD_LOGIC := '0';
+			--
+			hex2	    : out STD_LOGIC_VECTOR(6 downto 0);  --7-seg display outputs (g to a)
+			hex1	    : out STD_LOGIC_VECTOR(6 downto 0);  --for 7seg display
+			hex0	    : out STD_LOGIC_VECTOR(6 downto 0);
+			ledOut      : out STD_LOGIC_VECTOR(3 downto 0) := "0000"
+			);
+  END COMPONENT;
+END PACKAGE add_sub_pkg;
+
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.components.all;
+
 
 entity add_sub_state_machine is
   port (
@@ -26,7 +46,9 @@ architecture beh of add_sub_state_machine is
 --state definitions
 type state_type is (input_a, input_b, disp_sum, disp_diff); --states
 signal current_state, next_state : state_type; --defining what holds the states
+
 --signal declarations 
+
 --synchronized/edge detecting signals
 signal pb_sync    : std_logic := '0';
 --signal pbz_sync   : std_logic := '0';
@@ -40,16 +62,19 @@ signal out_12b    : std_logic_vector(11 downto 0):= "000000000000";
 signal coutSigA    : std_logic := '0';
 signal coutSigS    : std_logic := '0';
 --signal pbhold     : std_logic := '0';
+
 --hex output signals
 signal hex1s      : std_logic_vector(3 downto 0) := "0000";
 signal hex10s     : std_logic_vector(3 downto 0) := "0000";
 signal hex100s    : std_logic_vector(3 downto 0) := "0000";
+
 --register signals
 signal a_reg      : std_logic_vector(7 downto 0) := "00000000";
 signal b_reg      : std_logic_vector(7 downto 0) := "00000000";
 signal add_reg    : std_logic_vector(7 downto 0) := "00000000";
 signal sub_reg    : std_logic_vector(7 downto 0) := "00000000";
 
+--end of signals
 
 begin
 
