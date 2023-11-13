@@ -1,35 +1,4 @@
---*****************************************************************************
---***************************  VHDL Source Code  ******************************
---*****************************************************************************
---
---
---      FILE NAME:  clock_synchronizer.vhd
---
--------------------------------------------------------------------------------
---
---  DESCRIPTION
---    This files contains the code that will take an input as a signal 
---    and a clock reference. The signal will then be registered 2 times 
---    and sent to the output port. This file is helpful in synchronizing 
---    asynchronous inputs (ie: user inputs from switches etc.). A generic
---    is provided to allow buses to be synchronized.
---
---    All variables/signals that end with "_n" are low active.
---    All identifiers that end with "_t" are user defined types
---    All identifiers that end with "_c" are user defined constants
---
---
---*****************************************************************************
---*****************************************************************************
 
-
-------------------------------------------------------------------------------
--- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
--- ||||                                                                   ||||
--- ||||                    COMPONENT PACKAGE                              ||||
--- ||||                                                                   ||||
--- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
@@ -51,13 +20,6 @@ END PACKAGE clock_synchronizer_pkg;
 
 
 
-------------------------------------------------------------------------------
--- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
--- ||||                                                                   ||||
--- ||||                    COMPONENT DESCRIPTION                          ||||
--- ||||                                                                   ||||
--- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
