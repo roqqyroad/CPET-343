@@ -1,24 +1,42 @@
--------------------------------------------------------------------------------
--- Dr. Kaputa
--- double_dabble demo
--------------------------------------------------------------------------------
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity double_dabble is
-  port (
-    result_padded           : in  std_logic_vector(11 downto 0); 
-    ones                    : out std_logic_vector(3 downto 0);
-    tens                    : out std_logic_vector(3 downto 0);
-    hundreds                : out std_logic_vector(3 downto 0)
-  );  
-end double_dabble;  
+PACKAGE double_dabble_pkg IS
+  COMPONENT double_dabble IS
+  PORT (
+    result_padded    : IN  std_logic_vector(11 DOWNTO 0);
+    --
+	ones             : OUT std_logic_vector(3 downto 0);
+	tens             : OUT std_logic_vector(3 downto 0);
+	hundreds         : OUT std_logic_vector(3 downto 0)
+    );
+  END COMPONENT double_dabble;
+END PACKAGE double_dabble_pkg;
 
-architecture beh of double_dabble  is
+------------------------------------------------------------------------------
+-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-- ||||
+-- |||| COMPONENT DESCRIPTION
+-- ||||
+-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
 
-begin
-  bcd1: process(result_padded)
+ENTITY double_dabble IS
+  PORT (
+    result_padded    : IN  std_logic_vector(11 DOWNTO 0);
+    --
+	ones             : OUT std_logic_vector(3 downto 0);
+	tens             : OUT std_logic_vector(3 downto 0);
+	hundreds         : OUT std_logic_vector(3 downto 0)
+    );
+END ENTITY double_dabble;
+
+ARCHITECTURE beh OF double_dabble IS
+BEGIN
+bcd1: process(result_padded)
   -- temporary variable
   variable temp : STD_LOGIC_VECTOR (11 downto 0);
   
