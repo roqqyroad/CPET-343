@@ -1,0 +1,9 @@
+
+State Machine - |top|processor:top_inst|calculator:top_inst|present_state
+Name present_state.wr_work_reg present_state.wr_work_wait present_state.wr_save_reg present_state.wr_save_wait present_state.rd_save_reg present_state.rd_work_reg 
+present_state.rd_work_reg 0 0 0 0 0 0 
+present_state.rd_save_reg 0 0 0 0 1 1 
+present_state.wr_save_wait 0 0 0 1 0 1 
+present_state.wr_save_reg 0 0 1 0 0 1 
+present_state.wr_work_wait 0 1 0 0 0 1 
+present_state.wr_work_reg 1 0 0 0 0 1 
