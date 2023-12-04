@@ -1,5 +1,5 @@
 Fitter report for pipeline
-Mon Dec 04 16:30:32 2023
+Mon Dec 04 16:50:34 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Dec 04 16:30:32 2023           ;
+; Fitter Status                   ; Successful - Mon Dec 04 16:50:34 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; pipeline                                        ;
 ; Top-level Entity Name           ; pipeline                                        ;
@@ -168,55 +168,55 @@ refer to the applicable agreement for further details.
 ; Node              ; Action          ; Operation        ; Reason                     ; Node Port ; Node Port Name ; Destination Node  ; Destination Port ; Destination Port Name ;
 +-------------------+-----------------+------------------+----------------------------+-----------+----------------+-------------------+------------------+-----------------------+
 ; clk~inputCLKENA0  ; Created         ; Placement        ; Fitter Periphery Placement ;           ;                ;                   ;                  ;                       ;
-; a[0]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[0]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[0]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[0]~_Duplicate_1 ; Q                ;                       ;
-; a[0]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[0]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[0]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[0]~_Duplicate_2 ; Q                ;                       ;
-; a[0]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[0]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[0]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[0]~_Duplicate_3 ; Q                ;                       ;
-; a[1]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[1]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[1]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[1]~_Duplicate_1 ; Q                ;                       ;
-; a[1]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[1]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[1]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[1]~_Duplicate_2 ; Q                ;                       ;
-; a[1]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[1]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[1]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[1]~_Duplicate_3 ; Q                ;                       ;
-; a[2]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[2]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[2]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[2]~_Duplicate_1 ; Q                ;                       ;
-; a[2]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[2]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[2]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[2]~_Duplicate_2 ; Q                ;                       ;
-; a[2]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[2]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[2]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[2]~_Duplicate_3 ; Q                ;                       ;
-; a[3]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[3]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[3]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[3]~_Duplicate_1 ; Q                ;                       ;
-; a[3]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[3]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[3]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[3]~_Duplicate_2 ; Q                ;                       ;
-; a[3]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[3]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[3]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[3]~_Duplicate_3 ; Q                ;                       ;
-; a[4]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[4]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[4]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[4]~_Duplicate_1 ; Q                ;                       ;
-; a[4]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[4]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[4]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[4]~_Duplicate_2 ; Q                ;                       ;
-; a[4]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[4]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[4]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[4]~_Duplicate_3 ; Q                ;                       ;
-; a[5]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[5]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[5]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[5]~_Duplicate_1 ; Q                ;                       ;
-; a[5]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[5]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[5]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[5]~_Duplicate_2 ; Q                ;                       ;
-; a[5]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[5]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[5]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[5]~_Duplicate_3 ; Q                ;                       ;
-; a[6]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[6]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[6]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[6]~_Duplicate_1 ; Q                ;                       ;
-; a[6]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[6]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[6]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[6]~_Duplicate_2 ; Q                ;                       ;
-; a[6]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[6]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[6]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[6]~_Duplicate_3 ; Q                ;                       ;
-; a[7]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
+; a[7]              ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
 ; a[7]              ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[7]~_Duplicate_1 ; Q                ;                       ;
-; a[7]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
+; a[7]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AY               ;                       ;
 ; a[7]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[7]~_Duplicate_2 ; Q                ;                       ;
-; a[7]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; AY               ;                       ;
+; a[7]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; AX               ;                       ;
 ; a[7]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization        ; Q         ;                ; a[7]~_Duplicate_3 ; Q                ;                       ;
-; result[0]~reg0    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_async[0]   ; RESULTA          ;                       ;
+; result[0]~reg0    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; Mult1~8           ; RESULTA          ;                       ;
 ; result[1]~reg0    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
 ; result[2]~reg0    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
 ; result[3]~reg0    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
@@ -232,6 +232,14 @@ refer to the applicable agreement for further details.
 ; result[13]~reg0   ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
 ; result[14]~reg0   ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
 ; result[15]~reg0   ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result[0]~reg0    ; RESULTA          ;                       ;
+; result_temp[0]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; Mult0~8           ; RESULTA          ;                       ;
+; result_temp[1]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[2]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[3]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[4]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[5]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[6]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
+; result_temp[7]    ; Packed Register ; Register Packing ; Timing optimization        ; Q         ;                ; result_temp[0]    ; RESULTA          ;                       ;
 +-------------------+-----------------+------------------+----------------------------+-----------+----------------+-------------------+------------------+-----------------------+
 
 
@@ -241,8 +249,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 80 ) ; 0.00 % ( 0 / 80 )          ; 0.00 % ( 0 / 80 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 80 ) ; 0.00 % ( 0 / 80 )          ; 0.00 % ( 0 / 80 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 88 ) ; 0.00 % ( 0 / 88 )          ; 0.00 % ( 0 / 88 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 88 ) ; 0.00 % ( 0 / 88 )          ; 0.00 % ( 0 / 88 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -265,7 +273,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 80 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 88 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -283,12 +291,12 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 7 / 32,070         ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 7                  ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 7 / 32,070         ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 6                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 1                  ;       ;
-;         [c] ALMs used for registers                         ; 0                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 9 / 32,070         ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 5                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 2                  ;       ;
+;         [c] ALMs used for registers                         ; 2                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 32,070         ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -307,7 +315,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ;     -- 5 input functions                                    ; 0                  ;       ;
 ;     -- 4 input functions                                    ; 0                  ;       ;
 ;     -- <=3 input functions                                  ; 13                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 2                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 12                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
@@ -371,11 +379,11 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.3% / 0.9% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.4% / 0.8% ;       ;
 ; Maximum fan-out                                             ; 16                 ;       ;
-; Highest non-global fan-out                                  ; 15                 ;       ;
-; Total fan-out                                               ; 128                ;       ;
-; Average fan-out                                             ; 2.00               ;       ;
+; Highest non-global fan-out                                  ; 16                 ;       ;
+; Total fan-out                                               ; 130                ;       ;
+; Average fan-out                                             ; 1.97               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -386,12 +394,12 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 7 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 7                    ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 7 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 6                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 1                    ; 0                              ;
-;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 9 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 5                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 2                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 2                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -410,7 +418,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ;     -- 5 input functions                                    ; 0                    ; 0                              ;
 ;     -- 4 input functions                                    ; 0                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 13                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 2                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -439,7 +447,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 145                  ; 0                              ;
+;     -- Total Connections                                    ; 149                  ; 0                              ;
 ;     -- Registered Connections                               ; 33                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -472,8 +480,8 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clk   ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 15                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; reset ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 15                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clk   ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 16                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; reset ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 16                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -482,22 +490,22 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; result[0]  ; AF11  ; 3B       ; 18           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[10] ; AF13  ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[11] ; AA13  ; 3B       ; 20           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[12] ; AJ4   ; 3B       ; 22           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[13] ; AK2   ; 3B       ; 20           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[14] ; AE14  ; 3B       ; 24           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[15] ; AE13  ; 3B       ; 22           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[1]  ; AH9   ; 3B       ; 18           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[2]  ; AG11  ; 3B       ; 18           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[3]  ; AB13  ; 3B       ; 20           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[4]  ; AK4   ; 3B       ; 22           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[5]  ; AH3   ; 3A       ; 16           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[6]  ; AK3   ; 3B       ; 20           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[7]  ; AC12  ; 3A       ; 16           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[8]  ; AG10  ; 3B       ; 18           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[9]  ; AG2   ; 3A       ; 16           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[0]  ; AJ4   ; 3B       ; 22           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[10] ; AE13  ; 3B       ; 22           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[11] ; AH9   ; 3B       ; 18           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[12] ; AA13  ; 3B       ; 20           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[13] ; AC12  ; 3A       ; 16           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[14] ; AJ5   ; 3B       ; 24           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[15] ; AF11  ; 3B       ; 18           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[1]  ; AB13  ; 3B       ; 20           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[2]  ; AE14  ; 3B       ; 24           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[3]  ; AK3   ; 3B       ; 20           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[4]  ; AK2   ; 3B       ; 20           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[5]  ; AG11  ; 3B       ; 18           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[6]  ; AD14  ; 3B       ; 24           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[7]  ; AK4   ; 3B       ; 22           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[8]  ; AF13  ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[9]  ; AG10  ; 3B       ; 18           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -508,8 +516,8 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 +----------+------------------+---------------+--------------+---------------+
 ; B2L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
 ; B1L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
-; 3A       ; 4 / 32 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 14 / 48 ( 29 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 2 / 32 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 16 / 48 ( 33 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -568,7 +576,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AA10     ;            ; 3A             ; VCCPD3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 74         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA13     ; 90         ; 3B             ; result[11]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA13     ; 90         ; 3B             ; result[12]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA14     ; 122        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 120        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ; 146        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -598,7 +606,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AB10     ;            ; --             ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; AB11     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB12     ; 72         ; 3A             ; reset                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; AB13     ; 88         ; 3B             ; result[3]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB13     ; 88         ; 3B             ; result[1]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB15     ; 106        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -627,7 +635,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AC9      ; 58         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC10     ;            ; 3A             ; VCCPD3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AC11     ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AC12     ; 82         ; 3A             ; result[7]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AC12     ; 82         ; 3A             ; result[13]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AC13     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AC14     ; 104        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC15     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -659,7 +667,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AD11     ; 54         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD12     ; 80         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AD14     ; 98         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AD14     ; 98         ; 3B             ; result[6]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AD15     ;            ;                ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD16     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AD17     ; 160        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -688,8 +696,8 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AE10     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AE11     ; 59         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE12     ; 52         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AE13     ; 95         ; 3B             ; result[15]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AE14     ; 96         ; 3B             ; result[14]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AE13     ; 95         ; 3B             ; result[10]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AE14     ; 96         ; 3B             ; result[2]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AE15     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AE16     ; 139        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AE17     ; 135        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -716,9 +724,9 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AF8      ; 70         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF9      ; 67         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF10     ; 57         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AF11     ; 87         ; 3B             ; result[0]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AF11     ; 87         ; 3B             ; result[15]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AF12     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AF13     ; 93         ; 3B             ; result[10]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AF13     ; 93         ; 3B             ; result[8]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AF14     ; 114        ; 3B             ; clk                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AF15     ; 112        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF16     ; 137        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -737,7 +745,7 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AF29     ; 237        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AF30     ; 239        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AG1      ; 71         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AG2      ; 83         ; 3A             ; result[9]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AG2      ; 83         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG3      ; 63         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG4      ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AG5      ; 78         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -745,8 +753,8 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AG7      ; 68         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG8      ; 65         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG9      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AG10     ; 86         ; 3B             ; result[8]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AG11     ; 85         ; 3B             ; result[2]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AG10     ; 86         ; 3B             ; result[9]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AG11     ; 85         ; 3B             ; result[5]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AG12     ; 103        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG13     ; 101        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AG14     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -768,13 +776,13 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AG30     ; 243        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AH1      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AH2      ; 69         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AH3      ; 81         ; 3A             ; result[5]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AH3      ; 81         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH4      ; 61         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH5      ; 76         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH6      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AH7      ; 115        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH8      ; 113        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AH9      ; 84         ; 3B             ; result[1]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AH9      ; 84         ; 3B             ; result[11]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AH10     ; 118        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AH12     ; 126        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -799,8 +807,8 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AJ1      ; 79         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ2      ; 77         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ3      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AJ4      ; 94         ; 3B             ; result[12]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AJ5      ; 99         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AJ4      ; 94         ; 3B             ; result[0]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AJ5      ; 99         ; 3B             ; result[14]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AJ6      ; 102        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ7      ; 100        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ8      ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -826,9 +834,9 @@ The pin-out file can be found in C:/Users/rjd5748/CPET-343/homework/pipeline/hw/
 ; AJ28     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AJ29     ; 216        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AJ30     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AK2      ; 91         ; 3B             ; result[13]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AK3      ; 89         ; 3B             ; result[6]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AK4      ; 92         ; 3B             ; result[4]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AK2      ; 91         ; 3B             ; result[4]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AK3      ; 89         ; 3B             ; result[3]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AK4      ; 92         ; 3B             ; result[7]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AK5      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AK6      ; 97         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AK7      ; 107        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1475,8 +1483,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name     ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-----------------+--------------+
-; |pipeline                  ; 6.5 (4.5)            ; 6.5 (4.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (9)              ; 12 (8)                    ; 0 (0)         ; 0                 ; 0     ; 2          ; 18   ; 0            ; |pipeline                     ; pipeline        ; work         ;
-;    |generic_counter:uut|   ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pipeline|generic_counter:uut ; generic_counter ; work         ;
+; |pipeline                  ; 6.5 (4.5)            ; 8.0 (5.8)                        ; 1.5 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (9)              ; 12 (8)                    ; 0 (0)         ; 0                 ; 0     ; 2          ; 18   ; 0            ; |pipeline                     ; pipeline        ; work         ;
+;    |generic_counter:uut|   ; 2.0 (2.0)            ; 2.3 (2.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |pipeline|generic_counter:uut ; generic_counter ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1526,9 +1534,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - generic_counter:uut|count_sig[2] ; 1                 ; 0       ;
 ;      - generic_counter:uut|count_sig[1] ; 1                 ; 0       ;
 ;      - generic_counter:uut|count_sig[0] ; 1                 ; 0       ;
-;      - Mult1~mac                        ; 0                 ; 0       ;
-;      - Mult0~mac                        ; 1                 ; 0       ;
-;      - Mult1~mac                        ; 0                 ; 0       ;
+;      - Mult1~8                          ; 0                 ; 0       ;
+;      - Mult0~8                          ; 1                 ; 0       ;
+;      - Mult1~8                          ; 0                 ; 0       ;
+;      - Mult0~8                          ; 1                 ; 0       ;
 +-----------------------------------------+-------------------+---------+
 
 
@@ -1538,7 +1547,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location      ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; clk                        ; PIN_AF14      ; 14      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; generic_counter:uut|output ; FF_X19_Y4_N44 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; generic_counter:uut|output ; FF_X19_Y4_N50 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; reset                      ; PIN_AB12      ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +----------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -1564,14 +1573,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; DSP Block Details                                                                                                                                                                                                                                                                                                                                                                              ;
-+-----------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
-; Name      ; Mode            ; Location      ; Sign Representation ; Data AX Input Register ; Data AY Input Register ; Data AZ Input Register ; Data BX Input Register ; Data BY Input Register ; Data BZ Input Register ; Output Register ; Dedicated Shift Register Chain ; Dedicated Pre-Adder ; Dedicated Coefficient Storage ; Dedicated Output Adder Chain ; Dedicated Output Accumulator ;
-+-----------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
-; Mult1~mac ; Independent 9x9 ; DSP_X20_Y2_N0 ; Unsigned            ; no                     ; yes                    ; --                     ; --                     ; --                     ; --                     ; yes             ; no                             ; no                  ; no                            ; no                           ; no                           ;
-; Mult0~mac ; Independent 9x9 ; DSP_X20_Y4_N0 ; Unsigned            ; yes                    ; yes                    ; --                     ; --                     ; --                     ; --                     ; no              ; no                             ; no                  ; no                            ; no                           ; no                           ;
-+-----------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; DSP Block Details                                                                                                                                                                                                                                                                                                                                                                            ;
++---------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
+; Name    ; Mode            ; Location      ; Sign Representation ; Data AX Input Register ; Data AY Input Register ; Data AZ Input Register ; Data BX Input Register ; Data BY Input Register ; Data BZ Input Register ; Output Register ; Dedicated Shift Register Chain ; Dedicated Pre-Adder ; Dedicated Coefficient Storage ; Dedicated Output Adder Chain ; Dedicated Output Accumulator ;
++---------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
+; Mult1~8 ; Independent 9x9 ; DSP_X20_Y2_N0 ; Unsigned            ; no                     ; yes                    ; --                     ; --                     ; --                     ; --                     ; yes             ; no                             ; no                  ; no                            ; no                           ; no                           ;
+; Mult0~8 ; Independent 9x9 ; DSP_X20_Y4_N0 ; Unsigned            ; yes                    ; yes                    ; --                     ; --                     ; --                     ; --                     ; yes             ; no                             ; no                  ; no                            ; no                           ; no                           ;
++---------+-----------------+---------------+---------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+-----------------+--------------------------------+---------------------+-------------------------------+------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -1579,14 +1588,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 51 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 55 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 0 / 13,420 ( 0 % )     ;
-; C2 interconnects                            ; 38 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 15 / 56,300 ( < 1 % )  ;
+; C2 interconnects                            ; 37 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 14 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 2 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 6 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1642,12 +1651,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 4 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 13 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
 ; R14 interconnects                           ; 0 / 12,676 ( 0 % )     ;
 ; R14/C12 interconnect drivers                ; 0 / 20,720 ( 0 % )     ;
-; R3 interconnects                            ; 26 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 18 / 266,960 ( < 1 % ) ;
+; R3 interconnects                            ; 32 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 16 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1781,7 +1790,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clock           ; clock                ; 2.4               ;
+; clock           ; clock                ; 1.7               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1792,11 +1801,11 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------+----------------------------------+-------------------+
 ; Source Register                  ; Destination Register             ; Delay Added in ns ;
 +----------------------------------+----------------------------------+-------------------+
-; generic_counter:uut|count_sig[0] ; generic_counter:uut|count_sig[2] ; 0.293             ;
-; generic_counter:uut|count_sig[2] ; generic_counter:uut|count_sig[0] ; 0.292             ;
+; generic_counter:uut|count_sig[2] ; generic_counter:uut|count_sig[0] ; 0.285             ;
+; generic_counter:uut|count_sig[0] ; generic_counter:uut|output       ; 0.280             ;
 ; generic_counter:uut|count_sig[1] ; generic_counter:uut|output       ; 0.262             ;
-; a[1]~_Duplicate_3                ; a[7]~_Duplicate_3                ; 0.239             ;
-; a[0]~_Duplicate_3                ; a[0]~_Duplicate_2                ; 0.032             ;
+; a[1]~_Duplicate_3                ; a[1]                             ; 0.216             ;
+; a[0]~_Duplicate_3                ; a[1]                             ; 0.075             ;
 +----------------------------------+----------------------------------+-------------------+
 Note: This table only shows the top 5 path(s) that have the largest delay added for hold.
 
@@ -1814,7 +1823,7 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Critical Warning (169085): No exact pin location assignment(s) for 16 pins of 18 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clk~inputCLKENA0 with 28 fanout uses global clock CLKCTRL_G6
+    Info (11162): clk~inputCLKENA0 with 36 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (332104): Reading SDC File: '../pipeline.sdc'
@@ -1826,7 +1835,7 @@ Info (332111): Found 1 clocks
     Info (332111): ======== ============
     Info (332111):    2.000        clock
 Info (176235): Finished register packing
-    Extra Info (176218): Packed 40 registers into blocks of type DSP block
+    Extra Info (176218): Packed 48 registers into blocks of type DSP block
     Extra Info (176220): Created 24 register duplicates
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
 Info (170189): Fitter placement preparation operations beginning
@@ -1841,18 +1850,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.33 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/rjd5748/CPET-343/homework/pipeline/hw/output_files/pipeline.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 7146 megabytes
-    Info: Processing ended: Mon Dec 04 16:30:32 2023
-    Info: Elapsed time: 00:00:32
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Peak virtual memory: 7206 megabytes
+    Info: Processing ended: Mon Dec 04 16:50:34 2023
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:53
 
 
 +----------------------------+

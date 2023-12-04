@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-# Date created = 16:27:22  December 04, 2023
+# Date created = 16:49:48  December 04, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -39,7 +39,7 @@
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:27:22  DECEMBER 04, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:49:48  DECEMBER 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name TOP_LEVEL_ENTITY pipeline
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output_files
@@ -48,7 +48,3 @@ set_global_assignment -name VHDL_FILE ../../src/pipeline.vhd
 set_global_assignment -name SDC_FILE ../pipeline.sdc
 set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_AB12 -to reset
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

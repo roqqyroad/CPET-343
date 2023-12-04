@@ -14,17 +14,17 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:26:20 on Dec 04,2023
+# Start time: 16:48:45 on Dec 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/generic_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_counter
 # -- Compiling architecture beh of generic_counter
-# End time: 16:26:20 on Dec 04,2023, Elapsed time: 0:00:00
+# End time: 16:48:45 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:26:20 on Dec 04,2023
+# Start time: 16:48:45 on Dec 04,2023
 # vcom -reportprogress 300 -93 -work work ../../src/pipeline.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,10 +32,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity pipeline
 # -- Compiling architecture beh of pipeline
-# End time: 16:26:20 on Dec 04,2023, Elapsed time: 0:00:00
+# End time: 16:48:45 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:26:20 on Dec 04,2023
+# Start time: 16:48:45 on Dec 04,2023
 # vcom -reportprogress 300 -93 -work work ../src/pipeline_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,11 +44,11 @@
 # -- Compiling entity pipeline_tb
 # -- Compiling architecture arch of pipeline_tb
 # ** Warning: ../src/pipeline_tb.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 16:26:20 on Dec 04,2023, Elapsed time: 0:00:00
+# End time: 16:48:45 on Dec 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" -msgmode both pipeline_tb 
-# Start time: 16:26:20 on Dec 04,2023
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 16:48:45 on Dec 04,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -62,5 +62,5 @@
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# End time: 16:34:07 on Dec 04,2023, Elapsed time: 0:07:47
-# Errors: 4, Warnings: 0
+# End time: 16:49:38 on Dec 04,2023, Elapsed time: 0:00:53
+# Errors: 8, Warnings: 0

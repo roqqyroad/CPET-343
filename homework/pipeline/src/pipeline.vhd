@@ -27,7 +27,7 @@ component generic_counter is
   );  
 end component;  
 
-constant PIPELINE_FLAG   : boolean := false; 
+constant PIPELINE_FLAG   : boolean := true; 
 signal enable            : std_logic;
 signal a                 : std_logic_vector(7 downto 0) := "00000001";
 signal result_temp       : std_logic_vector(15 downto 0);

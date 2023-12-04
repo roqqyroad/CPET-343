@@ -1,5 +1,13 @@
 |pipeline
 clk => generic_counter:uut.clk
+clk => result_temp[0].CLK
+clk => result_temp[1].CLK
+clk => result_temp[2].CLK
+clk => result_temp[3].CLK
+clk => result_temp[4].CLK
+clk => result_temp[5].CLK
+clk => result_temp[6].CLK
+clk => result_temp[7].CLK
 clk => result[0]~reg0.CLK
 clk => result[1]~reg0.CLK
 clk => result[2]~reg0.CLK
@@ -25,6 +33,14 @@ clk => a[5].CLK
 clk => a[6].CLK
 clk => a[7].CLK
 reset => generic_counter:uut.reset
+reset => result_temp[0].ACLR
+reset => result_temp[1].ACLR
+reset => result_temp[2].ACLR
+reset => result_temp[3].ACLR
+reset => result_temp[4].ACLR
+reset => result_temp[5].ACLR
+reset => result_temp[6].ACLR
+reset => result_temp[7].ACLR
 reset => result[0]~reg0.ACLR
 reset => result[1]~reg0.ACLR
 reset => result[2]~reg0.ACLR
@@ -49,22 +65,22 @@ reset => a[4].ACLR
 reset => a[5].ACLR
 reset => a[6].ACLR
 reset => a[7].ACLR
-result[0] << result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[1] << result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[2] << result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[3] << result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[4] << result[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[5] << result[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[6] << result[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[7] << result[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[8] << result[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[9] << result[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[10] << result[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[11] << result[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[12] << result[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[13] << result[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[14] << result[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-result[15] << result[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= result[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= result[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= result[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= result[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= result[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= result[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= result[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= result[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pipeline|generic_counter:uut
